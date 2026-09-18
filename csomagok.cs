@@ -9,7 +9,7 @@ namespace sajatoasszekotott
     internal class csomagok
 
     {
-        private static string[] kondiciok = { "N", "T", "TS", "TM", "TWU" };
+        private static string[] kondiciok = { "N", "T", "TS", "TM", "TWU" };//nincs,törékeny,túlsúlyos,túlméreteterzett,this side up
         private string lakcím;
         private double súly;
         private double méret;
