@@ -24,19 +24,19 @@ namespace sajatoasszekotott
             this.csomag_szam = csomag_szam;
             this.postairoda_nev = postairoda_nev;
         }
-        public bool csomag_feladas(csomagok ujCsomag)
+        public bool csomag_feladas(csomagok Csomag)
         {
             if (csomag.Count < csomag_szam)
             {
-                csomag.Add(ujCsomag);
+                csomag.Add(Csomag);
                 return true;
             }
             return false;
         }
-        public bool csomagatvetel(csomagok atvettCsomag) 
+        public bool csomagatvetel(csomagok Csomag) 
         {
-            if (csomag.Contains(atvettCsomag))
-            { csomag.Remove(atvettCsomag);
+            if (csomag.Contains(Csomag))
+            { csomag.Remove(Csomag);
                 return true;
             }
             return false;
